@@ -12,6 +12,13 @@
             width: 500px;
             border: 2px solid black;
             border-collapse: collapse;
+            position: relative;
+        }
+        caption{
+            font-size: 1.5em;
+            background-color: lightgrey;
+            font-weight: bold;
+            padding: 10px;
         }
         th,td{
             border: 1px solid black;
@@ -21,6 +28,21 @@
             background-color: gray;
             color: white;
         }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: rgba(19, 19, 129, 0.518);
+        }
+        tbody > tr:nth-child(even){
+            background-color: rgba(55, 55, 19, 0.267);
+            font-weight: bold;
+        }
+        /* tbody > tr:nth-child(2n){
+            background-color: lightgrey;
+        } */
         td.num{
             text-align: right;
         }
@@ -38,10 +60,11 @@
             TR,TD,TH 
     -->
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -93,12 +116,111 @@
                 <td>Maranhão</td>
                 <td class="num">7 010 960</td>
             </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7 010 960</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7 010 960</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7 010 960</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7 010 960</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7 010 960</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7 010 960</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7 010 960</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7 010 960</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7 010 960</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7 010 960</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7 010 960</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7 010 960</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7 010 960</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7 010 960</td>
+            </tr>
+
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>176 223 394</strong></td>
             </tr>
         </tfoot>
     </table>
+    <div class="paragrafos">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad fugit, a magni asperiores quisquam veritatis nam consequuntur debitis id autem, quas velit! Officiis totam accusantium nulla voluptates quaerat fugit dignissimos.
+    Velit recusandae fugiat quo facere fugit nobis omnis sequi sint, rerum quae, sit impedit aut tempora. Nihil accusantium, fuga blanditiis laboriosam saepe autem in, facere, at nostrum maiores incidunt natus.
+    Accusamus itaque at, molestias fuga maxime necessitatibus laudantium, officiis velit doloribus ut totam facilis cupiditate? Neque fugit odio doloribus quidem architecto enim. Quisquam soluta autem rem amet maxime numquam illum.
+    Labore omnis velit cum excepturi quae dolor dicta optio? Dolor necessitatibus maxime perspiciatis atque non aperiam, asperiores repellat dolorem numquam alias magni commodi! Nostrum, tenetur consectetur. Possimus iste adipisci praesentium.
+    Reiciendis vitae quidem voluptatum nemo porro error ullam quibusdam, iste deleniti enim laboriosam sequi aliquam iusto quod maiores ex accusamus. Voluptates sint tenetur aspernatur odio minus consectetur asperiores laudantium nulla.
+    Illo qui nemo temporibus repudiandae magnam veritatis distinctio cum beatae quo perferendis minima molestiae sint inventore iure corporis, nostrum aliquid nobis cumque itaque, a delectus? Reprehenderit aliquam fuga esse nam!
+    Iusto optio vitae facilis accusantium voluptates temporibus consequuntur doloremque magni, eaque, recusandae, quia maxime dicta quis iure at necessitatibus nulla. Tenetur fuga aspernatur quibusdam vitae blanditiis? Dignissimos sit blanditiis minima.
+    Officiis debitis soluta qui mollitia, voluptas perferendis, nulla eos nam quisquam obcaecati aut. Deserunt consequuntur deleniti facere voluptatum maxime sapiente quia inventore dolores possimus aperiam corrupti dignissimos sequi, a accusamus.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad fugit, a magni asperiores quisquam veritatis nam consequuntur debitis id autem, quas velit! Officiis totam accusantium nulla voluptates quaerat fugit dignissimos.
+        Velit recusandae fugiat quo facere fugit nobis omnis sequi sint, rerum quae, sit impedit aut tempora. Nihil accusantium, fuga blanditiis laboriosam saepe autem in, facere, at nostrum maiores incidunt natus.
+        Accusamus itaque at, molestias fuga maxime necessitatibus laudantium, officiis velit doloribus ut totam facilis cupiditate? Neque fugit odio doloribus quidem architecto enim. Quisquam soluta autem rem amet maxime numquam illum.
+        Labore omnis velit cum excepturi quae dolor dicta optio? Dolor necessitatibus maxime perspiciatis atque non aperiam, asperiores repellat dolorem numquam alias magni commodi! Nostrum, tenetur consectetur. Possimus iste adipisci praesentium.
+        Reiciendis vitae quidem voluptatum nemo porro error ullam quibusdam, iste deleniti enim laboriosam sequi aliquam iusto quod maiores ex accusamus. Voluptates sint tenetur aspernatur odio minus consectetur asperiores laudantium nulla.
+        Illo qui nemo temporibus repudiandae magnam veritatis distinctio cum beatae quo perferendis minima molestiae sint inventore iure corporis, nostrum aliquid nobis cumque itaque, a delectus? Reprehenderit aliquam fuga esse nam!
+        Iusto optio vitae facilis accusantium voluptates temporibus consequuntur doloremque magni, eaque, recusandae, quia maxime dicta quis iure at necessitatibus nulla. Tenetur fuga aspernatur quibusdam vitae blanditiis? Dignissimos sit blanditiis minima.
+        Officiis debitis soluta qui mollitia, voluptas perferendis, nulla eos nam quisquam obcaecati aut. Deserunt consequuntur deleniti facere voluptatum maxime sapiente quia inventore dolores possimus aperiam corrupti dignissimos sequi, a accusamus.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad fugit, a magni asperiores quisquam veritatis nam consequuntur debitis id autem, quas velit! Officiis totam accusantium nulla voluptates quaerat fugit dignissimos.
+            Velit recusandae fugiat quo facere fugit nobis omnis sequi sint, rerum quae, sit impedit aut tempora. Nihil accusantium, fuga blanditiis laboriosam saepe autem in, facere, at nostrum maiores incidunt natus.
+            Accusamus itaque at, molestias fuga maxime necessitatibus laudantium, officiis velit doloribus ut totam facilis cupiditate? Neque fugit odio doloribus quidem architecto enim. Quisquam soluta autem rem amet maxime numquam illum.
+            Labore omnis velit cum excepturi quae dolor dicta optio? Dolor necessitatibus maxime perspiciatis atque non aperiam, asperiores repellat dolorem numquam alias magni commodi! Nostrum, tenetur consectetur. Possimus iste adipisci praesentium.
+            Reiciendis vitae quidem voluptatum nemo porro error ullam quibusdam, iste deleniti enim laboriosam sequi aliquam iusto quod maiores ex accusamus. Voluptates sint tenetur aspernatur odio minus consectetur asperiores laudantium nulla.
+            Illo qui nemo temporibus repudiandae magnam veritatis distinctio cum beatae quo perferendis minima molestiae sint inventore iure corporis, nostrum aliquid nobis cumque itaque, a delectus? Reprehenderit aliquam fuga esse nam!
+            Iusto optio vitae facilis accusantium voluptates temporibus consequuntur doloremque magni, eaque, recusandae, quia maxime dicta quis iure at necessitatibus nulla. Tenetur fuga aspernatur quibusdam vitae blanditiis? Dignissimos sit blanditiis minima.
+            Officiis debitis soluta qui mollitia, voluptas perferendis, nulla eos nam quisquam obcaecati aut. Deserunt consequuntur deleniti facere voluptatum maxime sapiente quia inventore dolores possimus aperiam corrupti dignissimos sequi, a accusamus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad fugit, a magni asperiores quisquam veritatis nam consequuntur debitis id autem, quas velit! Officiis totam accusantium nulla voluptates quaerat fugit dignissimos.
+                Velit recusandae fugiat quo facere fugit nobis omnis sequi sint, rerum quae, sit impedit aut tempora. Nihil accusantium, fuga blanditiis laboriosam saepe autem in, facere, at nostrum maiores incidunt natus.
+                Accusamus itaque at, molestias fuga maxime necessitatibus laudantium, officiis velit doloribus ut totam facilis cupiditate? Neque fugit odio doloribus quidem architecto enim. Quisquam soluta autem rem amet maxime numquam illum.
+                Labore omnis velit cum excepturi quae dolor dicta optio? Dolor necessitatibus maxime perspiciatis atque non aperiam, asperiores repellat dolorem numquam alias magni commodi! Nostrum, tenetur consectetur. Possimus iste adipisci praesentium.
+                Reiciendis vitae quidem voluptatum nemo porro error ullam quibusdam, iste deleniti enim laboriosam sequi aliquam iusto quod maiores ex accusamus. Voluptates sint tenetur aspernatur odio minus consectetur asperiores laudantium nulla.
+                Illo qui nemo temporibus repudiandae magnam veritatis distinctio cum beatae quo perferendis minima molestiae sint inventore iure corporis, nostrum aliquid nobis cumque itaque, a delectus? Reprehenderit aliquam fuga esse nam!
+                Iusto optio vitae facilis accusantium voluptates temporibus consequuntur doloremque magni, eaque, recusandae, quia maxime dicta quis iure at necessitatibus nulla. Tenetur fuga aspernatur quibusdam vitae blanditiis? Dignissimos sit blanditiis minima.
+                Officiis debitis soluta qui mollitia, voluptas perferendis, nulla eos nam quisquam obcaecati aut. Deserunt consequuntur deleniti facere voluptatum maxime sapiente quia inventore dolores possimus aperiam corrupti dignissimos sequi, a accusamus.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad fugit, a magni asperiores quisquam veritatis nam consequuntur debitis id autem, quas velit! Officiis totam accusantium nulla voluptates quaerat fugit dignissimos.
+                    Velit recusandae fugiat quo facere fugit nobis omnis sequi sint, rerum quae, sit impedit aut tempora. Nihil accusantium, fuga blanditiis laboriosam saepe autem in, facere, at nostrum maiores incidunt natus.
+                    Accusamus itaque at, molestias fuga maxime necessitatibus laudantium, officiis velit doloribus ut totam facilis cupiditate? Neque fugit odio doloribus quidem architecto enim. Quisquam soluta autem rem amet maxime numquam illum.
+                    Labore omnis velit cum excepturi quae dolor dicta optio? Dolor necessitatibus maxime perspiciatis atque non aperiam, asperiores repellat dolorem numquam alias magni commodi! Nostrum, tenetur consectetur. Possimus iste adipisci praesentium.
+                    Reiciendis vitae quidem voluptatum nemo porro error ullam quibusdam, iste deleniti enim laboriosam sequi aliquam iusto quod maiores ex accusamus. Voluptates sint tenetur aspernatur odio minus consectetur asperiores laudantium nulla.
+                    Illo qui nemo temporibus repudiandae magnam veritatis distinctio cum beatae quo perferendis minima molestiae sint inventore iure corporis, nostrum aliquid nobis cumque itaque, a delectus? Reprehenderit aliquam fuga esse nam!
+                    Iusto optio vitae facilis accusantium voluptates temporibus consequuntur doloremque magni, eaque, recusandae, quia maxime dicta quis iure at necessitatibus nulla. Tenetur fuga aspernatur quibusdam vitae blanditiis? Dignissimos sit blanditiis minima.
+                    Officiis debitis soluta qui mollitia, voluptas perferendis, nulla eos nam quisquam obcaecati aut. Deserunt consequuntur deleniti facere voluptatum maxime sapiente quia inventore dolores possimus aperiam corrupti dignissimos sequi, a accusamus.</p>
+                </div>
 </body>
